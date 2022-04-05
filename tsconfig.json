@@ -1,7 +1,13 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
+    "module": "ESNext",
     "skipLibCheck": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]

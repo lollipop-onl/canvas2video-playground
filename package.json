@@ -6,7 +6,7 @@
   "author": "lollipop-onl <lollipop@simochee.net>",
   "license": "MIT",
   "scripts": {
-    "start": "node -r esbuild src/main.ts"
+    "start": "ts-node src/main.ts"
   },
   "dependencies": {
     "@pankod/canvas2video": "^1.0.7"
@@ -15,6 +15,7 @@
     "@tsconfig/node16": "^1.0.2",
     "esbuild": "^0.14.31",
     "esbuild-register": "^3.3.2",
+    "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   }
 }

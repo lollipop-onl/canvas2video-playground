@@ -42,3 +42,5 @@ const helloWorld = async () => {
 };
 
 helloWorld();
+
+export {};

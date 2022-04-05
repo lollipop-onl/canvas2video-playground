@@ -1,3 +1,4 @@
+// @ts-ignore
 import { renderer, encoder } from "@pankod/canvas2video";
 import { Power3 } from "gsap";
 
@@ -8,6 +9,7 @@ const helloWorld = async () => {
             width: 1920,
             height: 1080,
             fps: 30,
+            // @ts-ignore
             makeScene: (fabric, canvas, anim, compose) => {
                 const text = new fabric.Text("Hello world", {
                     left: 400,

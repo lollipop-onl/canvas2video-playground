@@ -1,0 +1,17 @@
+name: Build a video
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+      - run: yarn install --frozen-lockfile
+      - run: yarn start
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: artifacts/

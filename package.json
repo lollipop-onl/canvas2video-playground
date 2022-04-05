@@ -1,0 +1,19 @@
+{
+  "name": "canvas2video-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lollipop-onl/canvas2video-playground.git",
+  "author": "lollipop-onl <lollipop@simochee.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esbuild src/main.ts"
+  },
+  "dependencies": {
+    "@pankod/canvas2video": "^1.0.7"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.31",
+    "esbuild-register": "^3.3.2",
+    "typescript": "^4.6.3"
+  }
+}
